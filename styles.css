@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Inter;
+    src: url('fonts/Inter.ttf') format('truetype');
+}
+body {
+    background: rgb(28, 28, 31);
+}
+
+.prefix-text {
+    color: rgb(65, 112, 241);
+    text-shadow: 0 0 20px rgba(65, 112, 241, 0.6);
+}
+
+.status-text {
+    color: rgb(108, 214, 87);
+}
+
+.info-text {
+    color: rgb(160, 160, 160);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    text-align: center;
+    font-family: Inter, Tahoma;
+    margin-top: 100px;
+}
+h2 {
+    color: rgb(160, 160, 160);
+    font-size: 24px;
+    text-align: center;
+    font-family: Inter, Tahoma;
+    margin-top: -27px;
+}
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+    font-family: Inter, Tahoma;
+}
+h4 {
+    font-size: 16px;
+    font-family: Inter, Tahoma;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    gap: 10px;
+}
+button {
+    font-size: 16px;
+    font-family: Inter, Tahoma;
+    width: 130px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 0;
+    background-color: rgb(65, 112, 200);
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: rgb(45, 92, 160);
+}
+
+.gradientbox {
+    position: relative;
+    margin: 200px auto 0;
+    width: 400px;
+    height: 235px;
+    background-color: rgb(28, 28, 31);
+    border-radius: 10px;
+    outline: 1px solid #323232;
+    transition: outline-color 0.3s;
+}
+
+.gradientbox:hover {
+    outline-color: transparent;
+}
+
+.gradientbox::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(10deg, #4170f1, #323232, #323232, #4170f1);
+    background-size: 300%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 3s linear infinite;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gradientbox:hover::before {
+    opacity: 1;
+}
+
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 100% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+
+
+.width-line {
+    width: 900px; 
+    height: 3px; 
+    outline: none;
+    border: none;
+    background: linear-gradient(10deg, #4170f1, #4170f1);
+    box-shadow: 0 0 20px rgba(65, 112, 241, 1);
+    border-radius: 10px;
+}
+
+
