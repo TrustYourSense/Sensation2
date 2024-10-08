@@ -129,7 +129,7 @@ button:hover {
     height: 3px; 
     outline: none;
     border: none;
-    background: linear-gradient(10deg, #4170f1, #4170f1);
+    background: linear-gradient(10deg, #4170f1, #5683ff,#4170f1);
     box-shadow: 0 0 20px rgba(65, 112, 241, 1);
     border-radius: 10px;
 }
